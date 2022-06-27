@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { UsersComponent } from './users.component';
 import { BannerNavBarComponent } from './banner-nav-bar/banner-nav-bar.component';
 import { LoginComponent } from './login/login.component';
+import { HeaderLoginComponent } from './header-login/header-login.component';
 
 
 
@@ -10,7 +11,8 @@ import { LoginComponent } from './login/login.component';
   declarations: [
     UsersComponent,
     BannerNavBarComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderLoginComponent
   ],
   imports: [
     CommonModule

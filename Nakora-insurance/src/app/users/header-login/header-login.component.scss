@@ -1,0 +1,40 @@
+.navBar a{
+    text-decoration: none !important;
+}
+.bannerNavBar{
+    background: #2e2740;
+}
+select option {
+  margin: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+.middle-banner{
+  border-end-end-radius: 5em;
+  margin-top: 15rem;
+  max-width: 36rem;
+  opacity: 0.85;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+.btn-login{
+  text-transform: uppercase;
+}
+.btn-primary{
+  background: #0963b6;
+}
+.bgFade{
+  opacity: 0.6;
+  z-index: 5;
+}
+.modal{
+  display: block;
+  top: 25%;
+  z-index: 6;
+}
+.modal-dialog{
+  width: 330px !important;
+}

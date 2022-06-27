@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">NACORA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse show" id="navbarBasic">
+        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Booking &amp; Quotes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="false">Dashboard</a>
+          </li>
+        </ul>
+        <span class="navbar-text nav px-2">     
+          <select class="bg-transparent text-white border-0 me-2">
+              <option  *ngFor="let lang of languages; let i = index" [value]="i">{{lang.isOptionLabel}}</option>
+          </select>
+          <button type="button" class="btn btn-primary btn-sm">Login</button>
+      </span>
+      </div>
+    </div>
+  </nav>

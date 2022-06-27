@@ -1,16 +1,8 @@
-<div class="modal" tabindex="-1" *ngIf="isModal">
-    <div class="modal-dialog">
-      <div class="modal-content bg-light w-75">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalBasicLabel">Modal title</h5>
-          <button type="button" class="btn-close" aria-label="Close"></button>
+<div class="modal-body">
+    <div *ngIf='loginInfo'>  
+        <div class="form-group form-floating mb-3" *ngFor="let userLogins of loginInfo">
+            <input [type]="userLogins.isType" class="form-control border-0 border-bottom" [id]="userLogins.isId" [placeholder]="userLogins.isLabel" [autocomplete]="userLogins.isAutocomplete" />
+            <label class="text-primary" [for]="userLogins.isId">{{userLogins.isLabel}}</label>
         </div>
-        <div class="modal-body">...</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>    
+    </div>
 </div>
-<div class="bgFade position-absolute h-100 w-100 bg-black start-0" *ngIf="isFade"></div>
