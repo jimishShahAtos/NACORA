@@ -1,0 +1,43 @@
+<div class="container-fluid" *ngIf="quotesCard">
+    <div *ngIf="isExpired">
+        <p class="h6">{{isTitle}} (2)</p>
+        <div class="row row-cols-sm-3 g-3">
+            <div class="col" [id]="quotes.isCardId" *ngFor="let quotes of quotesCard">                
+                <div class="card shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-2 col-sm-2 px-2 py-3">
+                            <img [src]="quotes.isIconSrc" class="img-fluid w-100" [alt]="quotes.isIconLabel">
+                        </div>
+                        <div class="col-9 col-sm-8">
+                            <div class="card-body w-90 float-start">
+                                <h6 class="card-title mb-0 text-black">
+                                    {{quotes.isDate | uppercase}}
+                                    <label class="text-muted">{{quotes.isInfoLabel}}</label>
+                                </h6>
+                                <strong class="text-muted">{{quotes.isName}}</strong>
+                                <p class="card-text">{{'#' + quotes.isAccount}}</p>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-2">
+                            <div class="float-end">
+                                <small [class]="quotes.isStatusClass">{{quotes.isStatus | uppercase}}</small>
+                            </div>
+                            <div class="card-body float-end p-0 mt-4 pe-2 card-text text-muted text-end fs-5 fw-bold">
+                                ${{quotes.isCurrency}}</div>
+                        </div>
+                        <div class="card-footer bg-white text-muted">
+                            <div class="float-start w-50">
+                                <a *ngFor="let links of quotes.isCrdLink" href="#" class="card-link text-decoration-none">
+                                    <small>{{links.isCardLink}}</small>
+                                </a>
+                            </div>
+                            <div class="float-end w-50 text-end text-danger">
+                                <small class="card-text">{{quotes.isExpirationStatus}}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
