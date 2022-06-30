@@ -9,229 +9,363 @@
             {
                 "sectionId": 1,
                 "sectionName": "SectionOne",
-                "sectionTitle": "Personal Info",
+                "sectionTitle": "User Login",
                 "isVisible": false,
                 "uiObjects": [
                     {
-                        "name": "textInput",
-                        "ids": 1,
-                        "type": "text",
-                        "inputLabel": "First Name",
-                        "autocomplete":"off",
-                        "isDisable": false,
-                        "isVisible": true,
-                        "validationRules":
-                        [
-                            {  
-                                "minLength":2,
-                                "maxLength":10
-                            }
-                        ],
+                        "isIds":1,
+                        "isType":"text",
+                        "isLabel": "User ID",      
+                        "isId":"userNameInput",
+                        "isAutocomplete":"off",
                         "isRequired": true
                     },
                     {
-                        "name": "textInput",
-                        "ids": 2,
-                        "type": "text",
-                        "inputLabel": "Last Name",
-                        "autocomplete":"off",
-                        "isDisable": false,
-                        "isVisible": true,
-                        "isRequired": true
-                    },
-                    {
-                        "name": "textInput",
-                        "ids": 3,
-                        "type": "email",
-                        "inputLabel": "Email",
-                        "autocomplete":"off",
-                        "isDisable": false,
-                        "isVisible": true,
-                        "isRequired": true
-                    },
-                    {
-                        "name": "radioInput",
-                        "ids": 4,
-                        "inputLabel": "Gender",
-                        "radioOptions": [
-                            {
-                                "id": 4.1,
-                                "type": "radio",
-                                "label": "Male",
-                                "checked":false,
-                                "isDisable": false,
-                                "isVisible": true,
-                                "isRequired": true
-                            },
-                            {
-                                "id": 4.2,
-                                "type": "radio",
-                                "label": "Female",
-                                "checked":false,
-                                "isDisable": false,
-                                "isVisible": true,
-                                "isRequired": true
-                            },
-                            {
-                                "id": 4.3,
-                                "type": "radio",
-                                "label": "Others",
-                                "checked":false,
-                                "isDisable": false,
-                                "isVisible": true,
-                                "isRequired": true
-                            }
-                        ]
-                    },                    
-                    {
-                        "name": "textInput",
-                        "ids": 5,
-                        "type": "date",
-                        "inputLabel": "Date Of Birth",
-                        "autocomplete":"off",
-                        "isDisable": false,
-                        "isVisible": true,
-                        "isRequired": true
-                    },
-                    {
-                        "name": "radioInput",
-                        "ids": 6,
-                        "inputLabel": "Nationality",
-                        "radioOptions": [
-                            {
-                                "id": 6.1,
-                                "type": "radio",
-                                "label": "Indian",
-                                "checked":false,
-                                "isDisable": false,
-                                "isVisible": false,
-                                "isRequired": true
-                            },
-                            {
-                                "id": 6.2,
-                                "type": "radio",
-                                "label": "Outside India",
-                                "checked":false,
-                                "isDisable": false,
-                                "isVisible": false,
-                                "isRequired": true
-                            }
-                        ]
-                    },
-                    {
-                        "name": "dropDown",
-                        "ids": 7,
-                        "inputLabel": "Hobbies",
-                        "isDisable": false,
-                        "isVisible": true,
-                        "isRequired": true,
-                        "selectOptions": [
-                            {
-                                "values": "Select",
-                                "label": "Select",
-                                "selected": "selected"
-                            },
-                            {
-                                "values": "Reading",
-                                "label": "Reading"
-                            },
-                            {
-                                "values": "Movies",
-                                "label": "Movies"
-                            },
-                            {
-                                "values": "Sports",
-                                "label": "Movies"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "textInput",
-                        "ids": 8,
-                        "type": "password",
-                        "inputLabel": "Enter New Password",
-                        "autocomplete":"off",
-                        "isDisable": false,
-                        "isVisible": true,
-                        "isRequired": true
-                    },
-                    {
-                        "name": "textInput",
-                        "ids": 9,
-                        "type": "password",
-                        "inputLabel": "Re-Enter New Password",
-                        "autocomplete":"off",
-                        "isDisable": false,
-                        "isVisible": true,
-                        "isRequired": true
-                    }
+                        "isIds":2,
+                        "isType":"password",
+                        "isLabel": "Password",      
+                        "isId":"passwordInput",
+                        "isAutocomplete":"off"
+                    }                    
                 ]
             }
         ]
     },
-    "EducationSections":{
+    "HeaderSection":{
         "titles":[
             {
-                "title":"Educational Info"
+                "title":"Languages"
             }
         ],
         "inputSection": [
             {
                 "uiObjects": [
                     {
-                        "isName": "textInput",
-                        "isIds": 1,
-                        "isType": "text",
-                        "inputLabel": "Course Name",
-                        "isAutocomplete":"off",
-                        "isDisable": false,
-                        "isVisible": true,
-                        "isPlaceholder":"Please Enter Course Name",
-                        "validationRules":
-                        [
-                            {  
-                                "minLength":2,
-                                "maxLength":10
-                            }
-                        ],
-                        "isRequired": true
+                        "isOptionLabel":"English"
                     },
                     {
-                        "isName": "textInput",
-                        "isIds": 2,
-                        "isType": "text",
-                        "inputLabel": "University / Institute Name",
-                        "isAutocomplete":"off",
-                        "isDisable": false,
-                        "isVisible": true,
-                        "isRequired": true,
-                        "isPlaceholder":"Please Enter University/Institute Name"
-                    },                    
-                                      
+                        "isOptionLabel":"English (UK)"
+                    },
                     {
-                        "isName": "textInput",
-                        "isIds": 3,
-                        "isType": "month",
-                        "inputLabel": "passing Year [Calender - year selection]",
-                        "isAutocomplete":"off",
-                        "isDisable": false,
-                        "isVisible": true,
-                        "isRequired": true,
-                        "isPlaceholder":"MMMM/YYYY"
-                    },                    
+                        "isOptionLabel":"English (IN)"
+                    },
                     {
-                        "isName": "textInput",
-                        "isIds": 4,
-                        "isType": "number",
-                        "inputLabel": "GPA / percentage",
-                        "isAutocomplete":"off",
-                        "isDisable": false,
-                        "isVisible": true,
-                        "isRequired": true,
-                        "isPlaceholder":"Passing Year in number"
+                        "isOptionLabel":"French"
+                    },
+                    {
+                        "isOptionLabel":"Italian"
                     }
                 ]
             }
         ]
-    }
+    },
+    "DashboardFilters":[
+        {
+            "titles":[
+                {
+                    "title":"Nav Pills"
+                }
+            ],
+            "uiObjects":[
+                {
+                    "isPills": "defaultPills",
+                    "isDefaultPills": true,
+                    "isListClass":"nav-item",
+                    "isLabel": "All",
+                    "isId": "pills-all",
+                    "isClass": "nav-link border shadow-sm py-2 px-4 mx-1 text-black fw-bold active",
+                    "isActive": true,
+                    "isIconClass": "",
+                    "isUlClass": "",
+                    "isRole": "button",
+                    "dropDownNav":false,
+                    "isClicked": "openIt()"
+                },
+                {
+                    "isPills": "defaultPills",
+                    "isDefaultPills": true,
+                    "isListClass":"nav-item",
+                    "isLabel": "In Progress",
+                    "isId": "pills-in-progress",
+                    "isClass": "nav-link border shadow-sm py-2 px-4 mx-1 text-black fw-bold",
+                    "isActive": true,
+                    "isIconClass":"",
+                    "isUlClass": "",
+                    "isRole": "button",
+                    "dropDownNav":false,
+                    "isClicked": "getStatusIssues()"
+                },
+                {
+                    "isPills": "defaultPills",
+                    "isDefaultPills": true,
+                    "isListClass":"nav-item",
+                    "isLabel": "Declined",
+                    "isId": "pills-declined",
+                    "isClass": "nav-link border shadow-sm py-2 px-4 mx-1 text-black fw-bold",
+                    "isActive": false,
+                    "isIconClass": "",
+                    "isUlClass": "",
+                    "isRole": "button",
+                    "dropDownNav":false,
+                    "isClicked": "getStatusIssues()"
+                },
+                {
+                    "isPills": "defaultPills",
+                    "isDefaultPills": true,
+                    "isListClass":"nav-item",
+                    "isLabel": "Issued",
+                    "isId": "pills-issued",
+                    "isClass": "nav-link border shadow-sm py-2 px-4 mx-1 text-black fw-bold",
+                    "isActive": false,
+                    "isIconClass":"",
+                    "isUlClass": "",
+                    "isRole": "button",
+                    "dropDownNav":false,
+                    "isClicked": "getStatusIssues()"
+                },
+                {
+                    "isPills": "defaultPills",
+                    "isDefaultPills": true,
+                    "isListClass":"nav-item",
+                    "isLabel": "Booked",
+                    "isId": "pills-booked",
+                    "isClass": "nav-link border shadow-sm py-2 px-4 mx-1 text-black fw-bold",
+                    "isActive": false,
+                    "isIconClass":"",
+                    "isUlClass": "",
+                    "isRole": "button",
+                    "dropDownNav":false,
+                    "isClicked": "getStatusIssues()"
+                },
+                {
+                    "isPills": "defaultPills",
+                    "isDefaultPills": true,
+                    "isListClass":"nav-item",
+                    "isLabel": "Expired",
+                    "isId": "pills-expired",
+                    "isClass": "nav-link border shadow-sm py-2 px-4 mx-1 text-black fw-bold",
+                    "isActive": false,
+                    "isIconClass":"",
+                    "isUlClass": "",
+                    "isRole": "button",
+                    "dropDownNav":false,
+                    "isClicked": "getStatusIssues()"
+                },
+                {
+                    "isPills": "dropDownPills",
+                    "isDefaultPills": false,
+                    "isListClass":"nav-item dropdown",
+                    "isLabel": "",
+                    "isId": "subNavGrid",
+                    "isClass": "nav-link dropdown-toggle",
+                    "isActive": false,
+                    "isIconClass":"fa fa-bars",
+                    "isUlClass": "dropdown-menu",
+                    "isRole": "button",
+                    "dropDownNav":true,
+                    "isClicked": "getStatusIssues()"
+                },
+                {
+                    "isPills": "dropDownPills",
+                    "isDefaultPills": false,
+                    "isListClass":"nav-item dropdown",
+                    "isLabel": "",
+                    "isId": "subNavGrid",
+                    "isClass": "nav-link dropdown-toggle",
+                    "isActive": false,
+                    "isIconClass":"fa fa-th",
+                    "isUlClass": "dropdown-menu",
+                    "isRole": "button",
+                    "dropDownNav":true,
+                    "isClicked": "getStatusIssues()"
+                }
+            ]
+        }
+    ],
+    "QuotesCard":[
+        {
+            "titles":[
+                {
+                    "title":"Quotes Card Thumbs"
+                }
+            ],
+            "uiObjects":[
+                {
+                    "isCardId": 1,
+                    "isHeading": "All",
+                    "isIcon": "plane",
+                    "isIconLabel": "Icon Flight",
+                    "isIconSrc":"assets/icons/icon-plane.png",
+                    "isDate": "26 Feb", 
+                    "isInfoLabel": "YUL-LHR",
+                    "isHeadingsLabel":"Expiring Soon",
+                    "isName": "John Mills",
+                    "isAccount":"255638942",
+                    "isStatus": "Issued",
+                    "isStatusClass":"badge bg-primary rounded-0 float-end",
+                    "isCurrency":123,          
+                    "isCardLabel": "Expiring Soon",            
+                    "isCrdLink":[
+                        {
+                            "isCardLink":"Book Quotes"
+                        },
+                        {
+                            "isCardLink":"Copy"
+                        }
+                    ],
+                    "isExpirationStatus": "Expiring in 7 Days"                   
+                },
+                {
+                    "isCardId": 2,
+                    "isHeading": "All",
+                    "isIcon": "plane",
+                    "isIconLabel": "Icon Flight",
+                    "isIconSrc":"assets/icons/icon-plane.png",
+                    "isDate": "26 Feb", 
+                    "isInfoLabel": "YUL-LHR",
+                    "isHeadingsLabel":"Expiring Soon",
+                    "isName": "John Mills",
+                    "isAccount":"255638942",
+                    "isStatus": "Booked",
+                    "isStatusClass":"badge bg-success rounded-0 float-end",
+                    "isCurrency":123,          
+                    "isCardLabel": "Expiring Soon",            
+                    "isCrdLink":[
+                        {
+                            "isCardLink":"Book Quotes"
+                        },
+                        {
+                            "isCardLink":"Copy"
+                        }
+                    ],
+                    "isExpirationStatus": "Expiring in 7 Days"                        
+                },
+                {
+                    "isCardId": 3,
+                    "isHeading": "All",
+                    "isIcon": "plane",
+                    "isIconLabel": "Icon Flight",
+                    "isIconSrc":"assets/icons/icon-plane.png",
+                    "isDate": "26 Feb", 
+                    "isInfoLabel": "YUL-LHR",
+                    "isHeadingsLabel":"Expiring Soon",
+                    "isName": "John Mills",
+                    "isAccount":"255638942",
+                    "isStatus": "In Progress",
+                    "isStatusClass":"badge bg-secondary rounded-0 float-end",
+                    "isCurrency":123,          
+                    "isCardLabel": "Expiring Soon",            
+                    "isCrdLink":[
+                        {
+                            "isCardLink":"Book Quotes"
+                        },
+                        {
+                            "isCardLink":"Copy"
+                        }
+                    ],
+                    "isExpirationStatus": "Expiring in 7 Days"                        
+                },
+                {
+                    "isCardId": 2,
+                    "isHeading": "All",
+                    "isIcon": "plane",
+                    "isIconLabel": "Icon Flight",
+                    "isIconSrc":"assets/icons/icon-plane.png",
+                    "isDate": "26 Feb", 
+                    "isInfoLabel": "YUL-LHR",
+                    "isHeadingsLabel":"Expiring Soon",
+                    "isName": "John Mills",
+                    "isAccount":"255638942",
+                    "isStatus": "Issued",
+                    "isStatusClass":"badge bg-primary rounded-0 float-end",
+                    "isCurrency":123,          
+                    "isCardLabel": "Expiring Soon",            
+                    "isCrdLink":[
+                        {
+                            "isCardLink":"Book Quotes"
+                        },
+                        {
+                            "isCardLink":"Copy"
+                        }
+                    ],
+                    "isExpirationStatus": "Expiring in 7 Days"                        
+                },
+                {
+                    "isCardId": 5,
+                    "isHeading": "All",
+                    "isIcon": "plane",
+                    "isIconLabel": "Icon Flight",
+                    "isIconSrc":"assets/icons/icon-plane.png",
+                    "isDate": "26 Feb", 
+                    "isInfoLabel": "YUL-LHR",
+                    "isHeadingsLabel":"Expiring Soon",
+                    "isName": "John Mills",
+                    "isAccount":"255638942",
+                    "isStatus": "Issued",
+                    "isStatusClass":"badge bg-primary rounded-0 float-end",
+                    "isCurrency":123,          
+                    "isCardLabel": "Expiring Soon",            
+                    "isCrdLink":[
+                        {
+                            "isCardLink":"Book Quotes"
+                        },
+                        {
+                            "isCardLink":"Copy"
+                        }
+                    ],
+                    "isExpirationStatus": "Expiring in 7 Days"                        
+                },
+                {
+                    "isCardId": 5,
+                    "isHeading": "All",
+                    "isIcon": "plane",
+                    "isIconLabel": "Icon Flight",
+                    "isIconSrc":"assets/icons/icon-plane.png",
+                    "isDate": "26 Feb", 
+                    "isInfoLabel": "YUL-LHR",
+                    "isHeadingsLabel":"Expiring Soon",
+                    "isName": "John Mills",
+                    "isAccount":"255638942",
+                    "isStatus": "Declined",
+                    "isStatusClass":"badge bg-warning rounded-0 float-end",
+                    "isCurrency":123,          
+                    "isCardLabel": "Expiring Soon",            
+                    "isCrdLink":[
+                        {
+                            "isCardLink":"Book Quotes"
+                        },
+                        {
+                            "isCardLink":"Copy"
+                        }
+                    ],
+                    "isExpirationStatus": "Expiring in 7 Days"                        
+                },
+                {
+                    "isCardId": 5,
+                    "isHeading": "All",
+                    "isIcon": "plane",
+                    "isIconLabel": "Icon Flight",
+                    "isIconSrc":"assets/icons/icon-plane.png",
+                    "isDate": "26 Feb", 
+                    "isInfoLabel": "YUL-LHR",
+                    "isHeadingsLabel":"Expiring Soon",
+                    "isName": "John Mills",
+                    "isAccount":"255638942",
+                    "isStatus": "Expired",
+                    "isStatusClass":"badge bg-danger rounded-0 float-end",
+                    "isCurrency":123,          
+                    "isCardLabel": "Expiring Soon",            
+                    "isCrdLink":[
+                        {
+                            "isCardLink":"Book Quotes"
+                        },
+                        {
+                            "isCardLink":"Copy"
+                        }
+                    ],
+                    "isExpirationStatus": "Expiring in 7 Days"                        
+                }
+            ]
+        }
+    ]
 }

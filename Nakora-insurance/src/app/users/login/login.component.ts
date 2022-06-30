@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ICredentialsInterface } from 'src/app/shared/interfaces/credentials.interface';
 
 @Component({
@@ -10,9 +11,16 @@ export class LoginComponent implements OnInit {
   // isModal = true;
   // isFade = false;  
 
-  constructor() {}
+  constructor() {
+    localStorage.clear();
+  }
 
   ngOnInit(): void {  }
+
+  Login= new FormGroup({
+    username : new FormControl("",Validators.required),
+    password : new FormControl("",Validators.required)
+  })
 
   "loginInfo":ICredentialsInterface[]=[
     {
@@ -28,6 +36,12 @@ export class LoginComponent implements OnInit {
       "isAutocomplete":"off"
     }
   ]
+
+  getUserLogin(){
+    if(this.Login.valid){
+      
+    }
+  }
 
   // getModal(){
   //   this.isModal = true;
